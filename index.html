@@ -1,15 +1,76 @@
-<div style="overflow:hidden; white-space:nowrap;">
-  <div style="
-    display:inline-block;
-    padding-left:100%;
-    animation: scroll 15s linear infinite;">
-    🔔 Planned maintenance Feb 15 | 🚀 New dashboard live | ⚠️ Freeze ongoing
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SharePoint Announcement Banner</title>
 
-<style>
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-</style>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: transparent;
+    }
+
+    .banner {
+      overflow: hidden;
+      white-space: nowrap;
+      background: linear-gradient(90deg, #0047bb, #0078d4);
+      color: #ffffff;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .scroll {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 24s linear infinite;
+    }
+
+    .item {
+      margin-right: 60px;
+    }
+
+    .icon {
+      margin-right: 6px;
+    }
+
+    .highlight {
+      font-weight: 700;
+    }
+
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="scroll">
+
+      <span class="item highlight">
+        <span class="icon">🚀</span>
+        <strong>New SharePoint Site is LIVE!</strong> Explore updates, resources, and key links in one place
+      </span>
+
+      <span class="item">
+        <span class="icon">🎉</span>
+        <strong>Congratulations Deepak!</strong> on achieving PMP Certification
+      </span>
+
+      <span class="item">
+        <span class="icon">📘</span>
+        <strong>Your One Dell Way Enterprise Platform Training</strong> is now available
+      </span>
+
+      <span class="item">
+        <span class="icon">⏳</span>
+        Focus on completing what’s available now and check back regularly for newly added courses
+      </span>
+
+    </div>
+  </div>
+</body>
+</html>
